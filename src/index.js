@@ -15,9 +15,9 @@ root.render(
   <React.StrictMode>
     <div>
     <App/>
-    <Fbc/>
+    {/* <Fbc/>
     <Cbc/>
-    <Listview/>
+    <Listview/> */}
     
      
      
