@@ -15,11 +15,6 @@ function App() {
     <Router>
     <div>
   <Header></Header>
-      {/* <Routes>
-      <Route path="foundations" element={<Foundations />} />
-      <Route path="icons" element={<Icons />} />
-   </Routes> */}
-
 
    <Routes>
         <Route path="uRIMS-Library/foundations" element={<Foundations/>} />
