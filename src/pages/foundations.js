@@ -1,13 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Foundations = () => {
 
-   
-  
-  
-    //   const handleSearch = (e) => {
-    //     setSearchTerm(e.target.value);
-    //   };
       return (
         <div>
             <center>
