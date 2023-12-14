@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/uRIMS-Library/static/css/main.css",
-    "main.js": "/uRIMS-Library/static/js/main.7fbbe97e.js",
+    "main.js": "/uRIMS-Library/static/js/main.a0621d01.js",
     "static/media/iconlibrary.svg?iz8a8p": "/uRIMS-Library/static/media/iconlibrary.e47d89e2127dc9018e1c.svg",
     "static/media/FreyaFusion-Logo.png": "/uRIMS-Library/static/media/FreyaFusion-Logo.32cdba72932693b3f915.png",
     "static/media/iconlibrary.eot?iz8a8p": "/uRIMS-Library/static/media/iconlibrary.0a72649550a4eb25788f.eot",
@@ -10,10 +10,10 @@
     "static/media/logo.svg": "/uRIMS-Library/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/uRIMS-Library/index.html",
     "main.css.map": "/uRIMS-Library/static/css/main.css.map",
-    "main.7fbbe97e.js.map": "/uRIMS-Library/static/js/main.7fbbe97e.js.map"
+    "main.a0621d01.js.map": "/uRIMS-Library/static/js/main.a0621d01.js.map"
   },
   "entrypoints": [
     "static/css/main.css",
-    "static/js/main.7fbbe97e.js"
+    "static/js/main.a0621d01.js"
   ]
 }
