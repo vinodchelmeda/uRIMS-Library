@@ -1,7 +1,11 @@
 {
   "files": {
-    "main.css": "/uRIMS-Library/static/css/main.css",
+    "main.css": "/uRIMS-Library/design/main.css",
     "main.js": "/uRIMS-Library/static/js/main.7931ed34.js",
+    "designsystem.css": "/uRIMS-Library/design/designsystem.css",
+    "designsystem.js": "/uRIMS-Library/static/js/designsystem.31d6cfe0.js",
+    "icons.css": "/uRIMS-Library/design/icons.css",
+    "icons.js": "/uRIMS-Library/static/js/icons.31d6cfe0.js",
     "static/media/iconlibrary.svg?iz8a8p": "/uRIMS-Library/static/media/iconlibrary.a96116410979efcf27ae.svg",
     "static/media/FreyaFusion-Logo.png": "/uRIMS-Library/static/media/FreyaFusion-Logo.32cdba72932693b3f915.png",
     "static/media/iconlibrary.eot?iz8a8p": "/uRIMS-Library/static/media/iconlibrary.1e032441e1533381338c.eot",
@@ -9,11 +13,13 @@
     "static/media/iconlibrary.ttf?iz8a8p": "/uRIMS-Library/static/media/iconlibrary.eef34d109ab582c0d774.ttf",
     "static/media/logo.svg": "/uRIMS-Library/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/uRIMS-Library/index.html",
-    "main.css.map": "/uRIMS-Library/static/css/main.css.map",
-    "main.7931ed34.js.map": "/uRIMS-Library/static/js/main.7931ed34.js.map"
+    "main.css.map": "/uRIMS-Library/design/main.css.map",
+    "main.7931ed34.js.map": "/uRIMS-Library/static/js/main.7931ed34.js.map",
+    "designsystem.css.map": "/uRIMS-Library/design/designsystem.css.map",
+    "icons.css.map": "/uRIMS-Library/design/icons.css.map"
   },
   "entrypoints": [
-    "static/css/main.css",
+    "design/main.css",
     "static/js/main.7931ed34.js"
   ]
 }
