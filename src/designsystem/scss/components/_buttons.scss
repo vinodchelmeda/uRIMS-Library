@@ -1,27 +1,32 @@
-$border-button-none:$no-border;
-$border-radius-button-base:$border-radius-base;
+@import '../abstract/variables';
 
-$space-padding-button-y:$space-condensed;  
-$space-padding-button-x:$space-default;
+$border-button-none: $no-border;
+$border-radius-button-base: $border-radius-base;
 
-$color-text-button:$white;
-$color-text-button-secondary:$black-900;
+$space-padding-button-y: $space-condensed;
+$space-padding-button-x: $space-default;
 
-$font-size-button-base:$font-base;
-$font-weight-button-bolder:$text-bolder;
+$color-text-button: $white;
+$color-text-button-secondary: $black-900;
 
-$line-height-tabs-small:$lineheight-small;
+$font-size-button-base: $font-base;
+$font-weight-button-bolder: $text-bolder;
+
+$line-height-tabs-small: $lineheight-small;
+
+$icon-padding-muibutton-y: $space-nospace;
+$icon-padding-muibutton-x: $space-micro;
 
 
 
 $theme-colors: (
-  "primary":$primary-600,
-  "success":$success-700,
-  "danger":$danger-800,
-  "warning":$warning-400,
-  "secondary":$black-200,
+    "primary":$primary-600,
+    "success":$success-700,
+    "danger":$danger-800,
+    "warning":$warning-400,
+    "secondary":$black-200,
 
-) !default;
+    ) !default;
 
 
 
@@ -30,69 +35,85 @@ $theme-colors: (
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
-    border:$border-button-none;
-    padding:$space-padding-button-y  $space-padding-button-x;
+    border: $border-button-none;
+    padding: $space-padding-button-y $space-padding-button-x;
     border-radius: $border-radius-button-base;
     background-color: $bg-color;
     color: $color-text-button;
     font-size: $font-size-button-base;
     font-weight: $font-weight-button-bolder;
     line-height: $line-height-tabs-small;
-   + .btn{
-     margin-left: 14px;
-   }
 
-  }
+    em {
+        padding: $icon-padding-muibutton-y $icon-padding-muibutton-x;
+    }
+
+    +.btn {
+        margin-left: 14px;
+    }
+
+}
 
 
 
 @each $key, $val in $theme-colors {
-    .btn-#{$key}{
-        @include btn($val);
-        &:hover{
-            background-color: darken($val, 10%) ;
-        }
-        &[disabled]{
-            pointer-events: none;
-            opacity: 0.35;
-        }
-        &:active{
-            background-color: darken($val, 20%) ;
-        }
-        &:focus {
-            border: 1px solid darken($val, 20%) ;
-        }
+    .btn-#{$key} {
+        @include btn($val
+    );
+
+    &:hover {
+        background-color: darken($val, 10%);
     }
-    @if $key == 'secondary'{
-        .btn-#{$key}{
-        color:  $color-text-button-secondary;
-        }
+
+    &[disabled] {
+        pointer-events: none;
+        opacity: 0.35;
     }
-    .btn-#{$key}-link{
-        // @include btn($transparent);
-        color: $val;
-        text-decoration: none;
-        padding: $space-padding-button-y $space-padding-button-x;
-        font-size: $font-size-button-base;
-        font-weight: $font-weight-button-bolder;
-        &:hover{
-            color: darken($val, 20%) ;
-            text-decoration: underline;
-            cursor:pointer;
-            
-        }
-        &[disabled]{
-            pointer-events: none;
-            opacity: 0.35;
-        }
-        &:active{
-            color: darken($val, 40%) ;
-        }
-        &:focus {
-            background-color: ($val, 60%) ;
-            border: 1px solid ($val, 80%) ;
-        }
+
+    &:active {
+        background-color: darken($val, 20%);
     }
+
+    &:focus {
+        border: 1px solid darken($val, 20%);
+    }
+}
+
+@if $key =='secondary' {
+    .btn-#{$key} {
+        color: $color-text-button-secondary;
+    }
+}
+
+.btn-#{$key}-link {
+    // @include btn($transparent);
+    color: $val;
+    text-decoration: none;
+    padding: $space-padding-button-y $space-padding-button-x;
+    font-size: $font-size-button-base;
+    font-weight: $font-weight-button-bolder;
+
+    &:hover {
+        color: darken($val, 20%);
+        text-decoration: underline;
+        cursor: pointer;
+
+    }
+
+    &[disabled] {
+        pointer-events: none;
+        opacity: 0.35;
+    }
+
+    &:active {
+        color: darken($val, 40%);
+    }
+
+    &:focus {
+        background-color: ($val, 60%);
+        border: 1px solid ($val, 80%);
+    }
+}
 
 }
 
